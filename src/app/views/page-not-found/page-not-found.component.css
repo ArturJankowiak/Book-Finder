@@ -1,0 +1,17 @@
+.jumbotron {
+  background-color: lightseagreen;
+}
+
+.jumbotron .display-4 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.jumbotron .lead {
+    font-weight: 300;
+}
+
+
+
+
+
