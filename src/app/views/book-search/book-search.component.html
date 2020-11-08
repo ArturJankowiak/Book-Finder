@@ -9,7 +9,17 @@
           class="form-control"
           placeholder="Search Books"
         />
-        <button id="search" class="btn btn-primary" onclick="">Search</button>
+        <button id="search" class="btn btn-primary" (click)="get()">
+          Search
+        </button>
+      </div>
+      <div>
+        <ul>
+          <li *ngFor="let book of books | async">
+            {{ book.authors }}
+            {{ book.title }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>

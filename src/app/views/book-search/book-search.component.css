@@ -1,5 +1,5 @@
 body {
-    background-image: url();
+    background-image: url('src/assets/img/books-app.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,13 @@ body {
   
   #header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
+    color: seashell;
+  }
+
+  #header:hover {
+      color: rgb(230, 111, 65);
+      transition: 1s;
   }
   
   h2 {
