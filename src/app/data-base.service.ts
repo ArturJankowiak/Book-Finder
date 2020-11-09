@@ -8,7 +8,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class DataBaseService {
-  API_KEY = 'AIzaSyCbSq4iLEl5-nR5zd96p7DDGVOCrdL-42I';
+  API_KEY = 'my api key';
   private url = 'https://www.googleapis.com/books/v1/volumes'
 
   private database$ = new BehaviorSubject<BookItem[]>([]);
