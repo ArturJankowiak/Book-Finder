@@ -18,8 +18,9 @@ export class BookSearchComponent implements OnInit{
     
   }
 
-  get() {
-    this.http.getBooks('cars').subscribe();
+  displayBooks() {
+    this.http.getBooks('').subscribe();
+    
   }
 
   
