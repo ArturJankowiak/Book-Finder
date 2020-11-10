@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class BookSearchComponent implements OnInit{
   
+  
   books: Observable<BookItem[]>
 
   constructor(private http: DataBaseService) { }
@@ -19,7 +20,7 @@ export class BookSearchComponent implements OnInit{
   }
 
   displayBooks() {
-    this.http.getBooks('').subscribe();
+    this.http.getBooks('flowers').subscribe();
     
   }
 
