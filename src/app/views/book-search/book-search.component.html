@@ -8,8 +8,10 @@
           type="text"
           class="form-control"
           placeholder="Search Books"
-        />
-        <button id="search" class="btn btn-primary" (click)="displayBooks()">
+          #input
+          (keyup)="displayBooks(input.value)"
+          />
+        <button id="search" class="btn btn-primary" (click)="displayBooks(input.value)">
           Search
         </button>
       </div>
@@ -18,6 +20,7 @@
           <li *ngFor="let book of books | async">
             {{ book.authors }}
             {{ book.title }}
+            <img [src]="book.image" alt="">
           </li>
         </ul>
       </div>
@@ -26,8 +29,8 @@
   <div class="book-list">
     <h2 class="text-center">Search Result</h2>
     <div id="list-output" class="">
-      <div class="row">
-        <!-- card  -->
+      <div class="row" *ngFor="let book of books | async" [books]="books">
+        
       </div>
     </div>
   </div>
